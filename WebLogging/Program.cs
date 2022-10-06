@@ -1,20 +1,31 @@
+using Serilog;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Host.UseSerilog();
+
+
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .CreateLogger();
+
+Log.Information("Application Starting Up");
+
 builder.Logging.ClearProviders();
-builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
+//builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
 
-builder.Host.ConfigureLogging(logging =>
-{
-    logging.ClearProviders();
-});
+//builder.Host.ConfigureLogging(logging =>
+//{
+//    logging.ClearProviders();
+//});
 
-builder.Host.ConfigureLogging((context, logging) =>
-{
-    logging.ClearProviders();
-    logging.AddConfiguration(context.Configuration.GetSection("Logging"));
-    logging.AddDebug();
-    logging.AddConsole();
-});
+//builder.Host.ConfigureLogging((context, logging) =>
+//{
+//    logging.ClearProviders();
+//    logging.AddConfiguration(context.Configuration.GetSection("Logging"));
+//    logging.AddDebug();
+//    logging.AddConsole();
+//});
 
 // Add services to the container.
 builder.Services.AddRazorPages();
@@ -32,10 +43,24 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+app.UseSerilogRequestLogging();
+
 app.UseRouting();
 
 app.UseAuthorization();
 
 app.MapRazorPages();
 
-app.Run();
+try
+{
+    Log.Information("Application Will be Running");
+    app.Run();
+}
+catch (Exception ex)
+{
+    Log.Fatal(ex, "The application failed to start correctly");
+}
+finally
+{
+    Log.CloseAndFlush();
+}

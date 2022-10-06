@@ -23,17 +23,34 @@ namespace WebLogging.Pages
             //_logger.LogInformation(LoggingId.DemoCode, "This is our first logged message.");
 
 
-            // Advanced logging messages
-            _logger.LogError("The server went down temporarily at {Time}", DateTime.UtcNow);
+            //// Advanced logging messages
+            //_logger.LogError("The server went down temporarily at {Time}", DateTime.UtcNow);
+
+            _logger.LogInformation("You requested the Index page.  ");
 
             try
             {
-                throw new Exception("You forgot to catch me");
+                for (int i = 0; i < 100; i++)
+                {
+                    if (i == 6)
+                    {
+                        throw new Exception("You forgot to catch me");
+                    }
+                    else
+                    {
+                        _logger.LogInformation("The value of i is {iVar}", i);
+                    }
+                }
+
             }
             catch (Exception ex)
             {
                 _logger.LogCritical(ex, "There was a bad exception at {Time}", DateTime.UtcNow);
             }
+
+            ////-----Serilog-----
+
+            //_logger.LogInformation("You requested the Index page.  ");
         }
     }
 

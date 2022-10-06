@@ -1,0 +1,62 @@
+{"Timestamp":"2022-10-06T19:30:08.4796273+03:00","Level":"Information","MessageTemplate":"Application Starting Up"}
+{"Timestamp":"2022-10-06T19:30:08.8251703+03:00","Level":"Information","MessageTemplate":"Application Will be Running"}
+{"Timestamp":"2022-10-06T19:30:10.0839894+03:00","Level":"Information","MessageTemplate":"You requested the Index page.  ","Properties":{"SourceContext":"WebLogging.Pages.IndexModel","ActionId":"bf630209-be1a-4ac9-baeb-566f3bc1b95f","ActionName":"/Index","RequestId":"0HML7N04FJDJ6:00000001","RequestPath":"/","ConnectionId":"0HML7N04FJDJ6"}}
+{"Timestamp":"2022-10-06T19:30:10.0917027+03:00","Level":"Information","MessageTemplate":"The value of i is {iVar}","Properties":{"iVar":0,"SourceContext":"WebLogging.Pages.IndexModel","ActionId":"bf630209-be1a-4ac9-baeb-566f3bc1b95f","ActionName":"/Index","RequestId":"0HML7N04FJDJ6:00000001","RequestPath":"/","ConnectionId":"0HML7N04FJDJ6"}}
+{"Timestamp":"2022-10-06T19:30:10.1027022+03:00","Level":"Information","MessageTemplate":"The value of i is {iVar}","Properties":{"iVar":1,"SourceContext":"WebLogging.Pages.IndexModel","ActionId":"bf630209-be1a-4ac9-baeb-566f3bc1b95f","ActionName":"/Index","RequestId":"0HML7N04FJDJ6:00000001","RequestPath":"/","ConnectionId":"0HML7N04FJDJ6"}}
+{"Timestamp":"2022-10-06T19:30:10.1052494+03:00","Level":"Information","MessageTemplate":"The value of i is {iVar}","Properties":{"iVar":2,"SourceContext":"WebLogging.Pages.IndexModel","ActionId":"bf630209-be1a-4ac9-baeb-566f3bc1b95f","ActionName":"/Index","RequestId":"0HML7N04FJDJ6:00000001","RequestPath":"/","ConnectionId":"0HML7N04FJDJ6"}}
+{"Timestamp":"2022-10-06T19:30:10.1069700+03:00","Level":"Information","MessageTemplate":"The value of i is {iVar}","Properties":{"iVar":3,"SourceContext":"WebLogging.Pages.IndexModel","ActionId":"bf630209-be1a-4ac9-baeb-566f3bc1b95f","ActionName":"/Index","RequestId":"0HML7N04FJDJ6:00000001","RequestPath":"/","ConnectionId":"0HML7N04FJDJ6"}}
+{"Timestamp":"2022-10-06T19:30:10.1084154+03:00","Level":"Information","MessageTemplate":"The value of i is {iVar}","Properties":{"iVar":4,"SourceContext":"WebLogging.Pages.IndexModel","ActionId":"bf630209-be1a-4ac9-baeb-566f3bc1b95f","ActionName":"/Index","RequestId":"0HML7N04FJDJ6:00000001","RequestPath":"/","ConnectionId":"0HML7N04FJDJ6"}}
+{"Timestamp":"2022-10-06T19:30:10.1099170+03:00","Level":"Information","MessageTemplate":"The value of i is {iVar}","Properties":{"iVar":5,"SourceContext":"WebLogging.Pages.IndexModel","ActionId":"bf630209-be1a-4ac9-baeb-566f3bc1b95f","ActionName":"/Index","RequestId":"0HML7N04FJDJ6:00000001","RequestPath":"/","ConnectionId":"0HML7N04FJDJ6"}}
+{"Timestamp":"2022-10-06T19:30:10.1495386+03:00","Level":"Fatal","MessageTemplate":"There was a bad exception at {Time}","Exception":"System.Exception: You forgot to catch me\r\n   at WebLogging.Pages.IndexModel.OnGet() in D:\\Codes\\Youtube\\WebLoggingApp\\WebLogging\\Pages\\Index.cshtml.cs:line 37","Properties":{"Time":"2022-10-06T16:30:10.1494289Z","SourceContext":"WebLogging.Pages.IndexModel","ActionId":"bf630209-be1a-4ac9-baeb-566f3bc1b95f","ActionName":"/Index","RequestId":"0HML7N04FJDJ6:00000001","RequestPath":"/","ConnectionId":"0HML7N04FJDJ6"}}
+{"Timestamp":"2022-10-06T19:30:10.3872041+03:00","Level":"Information","MessageTemplate":"HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms","Properties":{"RequestMethod":"GET","RequestPath":"/","StatusCode":200,"Elapsed":373.1675,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware"},"Renderings":{"Elapsed":[{"Format":"0.0000","Rendering":"373.1675"}]}}
+2022-10-06 22:21:38.199 +03:00 [INF] Application Starting Up
+2022-10-06 22:21:38.682 +03:00 [INF] Application Will be Running
+2022-10-06 22:21:40.348 +03:00 [INF] You requested the Index page.  
+2022-10-06 22:21:40.356 +03:00 [INF] The value of i is 0
+2022-10-06 22:21:40.364 +03:00 [INF] The value of i is 1
+2022-10-06 22:21:40.366 +03:00 [INF] The value of i is 2
+2022-10-06 22:21:40.370 +03:00 [INF] The value of i is 3
+2022-10-06 22:21:40.372 +03:00 [INF] The value of i is 4
+2022-10-06 22:21:40.373 +03:00 [INF] The value of i is 5
+2022-10-06 22:21:40.449 +03:00 [FTL] There was a bad exception at "2022-10-06T19:21:40.4367388Z"
+System.Exception: You forgot to catch me
+   at WebLogging.Pages.IndexModel.OnGet() in D:\Codes\Youtube\WebLoggingApp\WebLogging\Pages\Index.cshtml.cs:line 37
+2022-10-06 22:21:40.657 +03:00 [INF] HTTP GET / responded 200 in 457.5257 ms
+2022-10-06 22:24:47.231 +03:00 [INF] Application Starting Up
+2022-10-06 22:24:47.559 +03:00 [INF] Application Will be Running
+2022-10-06 22:24:48.937 +03:00 [INF] You requested the Index page.  
+2022-10-06 22:24:48.943 +03:00 [INF] The value of i is 0
+2022-10-06 22:24:48.948 +03:00 [INF] The value of i is 1
+2022-10-06 22:24:48.950 +03:00 [INF] The value of i is 2
+2022-10-06 22:24:48.951 +03:00 [INF] The value of i is 3
+2022-10-06 22:24:48.952 +03:00 [INF] The value of i is 4
+2022-10-06 22:24:48.953 +03:00 [INF] The value of i is 5
+2022-10-06 22:24:48.993 +03:00 [FTL] There was a bad exception at "2022-10-06T19:24:48.9930019Z"
+System.Exception: You forgot to catch me
+   at WebLogging.Pages.IndexModel.OnGet() in D:\Codes\Youtube\WebLoggingApp\WebLogging\Pages\Index.cshtml.cs:line 37
+2022-10-06 22:24:49.160 +03:00 [INF] HTTP GET / responded 200 in 294.6346 ms
+2022-10-06 22:35:07.043 +03:00 [INF] Application Starting Up
+2022-10-06 22:35:07.402 +03:00 [INF] Application Will be Running
+2022-10-06 22:35:08.827 +03:00 [INF] You requested the Index page.  
+2022-10-06 22:35:08.834 +03:00 [INF] The value of i is 0
+2022-10-06 22:35:08.842 +03:00 [INF] The value of i is 1
+2022-10-06 22:35:08.843 +03:00 [INF] The value of i is 2
+2022-10-06 22:35:08.845 +03:00 [INF] The value of i is 3
+2022-10-06 22:35:08.846 +03:00 [INF] The value of i is 4
+2022-10-06 22:35:08.847 +03:00 [INF] The value of i is 5
+2022-10-06 22:35:08.891 +03:00 [FTL] There was a bad exception at "2022-10-06T19:35:08.8909996Z"
+System.Exception: You forgot to catch me
+   at WebLogging.Pages.IndexModel.OnGet() in D:\Codes\Youtube\WebLoggingApp\WebLogging\Pages\Index.cshtml.cs:line 37
+2022-10-06 22:35:09.095 +03:00 [INF] HTTP GET / responded 200 in 370.7406 ms
+2022-10-06 22:35:15.891 +03:00 [INF] HTTP GET /Privacy responded 200 in 20.1537 ms
+2022-10-06 22:35:19.475 +03:00 [INF] You requested the Index page.  
+2022-10-06 22:35:19.477 +03:00 [INF] The value of i is 0
+2022-10-06 22:35:19.479 +03:00 [INF] The value of i is 1
+2022-10-06 22:35:19.481 +03:00 [INF] The value of i is 2
+2022-10-06 22:35:19.482 +03:00 [INF] The value of i is 3
+2022-10-06 22:35:19.484 +03:00 [INF] The value of i is 4
+2022-10-06 22:35:19.485 +03:00 [INF] The value of i is 5
+2022-10-06 22:35:19.506 +03:00 [FTL] There was a bad exception at "2022-10-06T19:35:19.5068015Z"
+System.Exception: You forgot to catch me
+   at WebLogging.Pages.IndexModel.OnGet() in D:\Codes\Youtube\WebLoggingApp\WebLogging\Pages\Index.cshtml.cs:line 37
+2022-10-06 22:35:19.519 +03:00 [INF] HTTP GET / responded 200 in 44.0099 ms
