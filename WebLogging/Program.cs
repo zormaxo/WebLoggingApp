@@ -1,6 +1,20 @@
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Logging.ClearProviders();
+builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
 
+builder.Host.ConfigureLogging(logging =>
+{
+    logging.ClearProviders();
+});
+
+builder.Host.ConfigureLogging((context, logging) =>
+{
+    logging.ClearProviders();
+    logging.AddConfiguration(context.Configuration.GetSection("Logging"));
+    logging.AddDebug();
+    logging.AddConsole();
+});
 
 // Add services to the container.
 builder.Services.AddRazorPages();
